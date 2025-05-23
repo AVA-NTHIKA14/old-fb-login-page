@@ -1,0 +1,319 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #3b5998;
+    color: #fff;
+    padding: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    color:#fff;
+    font-size:35px;
+    font-weight:bold;
+    text-decoration: none;
+    margin-left:170px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 8px;
+    margin-left: 10px;
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 30px;
+}
+
+.login-form button {
+    background-color: #4267b2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.login-form button:hover {
+    background-color: #365899;
+}
+
+.login-form .login-options {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.login-form .login-options label {
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.login-form .login-options a {
+    color: #9cb4d8;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.login-form .login-options a:hover {
+    text-decoration: underline;
+}
+
+.main-container {
+    display: flex;
+    width: 980px;
+    margin-top: 32px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.left-section {
+    width: 50%;
+    padding-right: 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 50vh;
+}
+
+.left-section p {
+    font-size: 24px;
+    line-height: 32px;
+    color: #1c1e21;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.left-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    max-height: 50vh;
+    object-fit: contain;
+}
+
+.right-section {
+    width: 50%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* Ensure input fields take full width */
+.right-section input[type="text"],
+.right-section input[type="email"],
+.right-section input[type="password"] {
+    width: 100%; /* This is the crucial line */
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+    font-size: 17px;
+    box-sizing: border-box;
+}
+
+.right-section .birthday-container {
+    margin-bottom: 12px;
+}
+
+.right-section .birthday-container label {
+    display: block;
+    font-size: 12px;
+    color: #606770;
+    margin-bottom: 5px;
+}
+
+.right-section .birthday-container .select-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+/* Ensure select boxes take full width */
+.right-section .birthday-container select {
+    padding: 12px;
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+    font-size: 17px;
+    flex-grow: 1; /* Allow them to expand */
+    box-sizing: border-box;
+    width: 100%; /* Add this for extra certainty */
+}
+
+.right-section .birthday-container a {
+    font-size: 12px;
+    color: #385898;
+    text-decoration: none;
+}
+
+.right-section .gender-container {
+    margin-bottom: 20px;
+}
+
+.right-section .gender-container label {
+    font-size: 17px;
+    color: #1c1e21;
+    font-weight: normal;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.right-section .gender-container .radio-group {
+    display: flex;
+}
+
+.right-section .gender-container .radio-group label {
+    font-size: 17px;
+    color: #1c1e21;
+    font-weight: normal;
+    margin-left: 6px;
+}
+
+.right-section small {
+    color: #777;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.right-section small a {
+    color: #385898;
+    text-decoration: none;
+}
+
+.right-section button {
+    background-color: #42b72a;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.right-section .create-page {
+    text-align: center;
+    font-size: 14px;
+}
+
+.right-section .create-page a {
+    color: #1c1e21;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #fff;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #737373;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #385898;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.language-links {
+    margin-bottom: 10px;
+}
+
+.language-links a {
+    color: #385898;
+    text-decoration: none;
+    margin: 0 4px;
+}
+
+.copyright {
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 980px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login-form {
+        margin-top: 10px;
+    }
+
+    .main-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .left-section {
+        margin-bottom: 20px;
+        text-align: center;
+        min-height: auto;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .left-section p {
+        text-align: left;
+    }
+
+    .left-section img {
+        max-height: none;
+        height: auto;
+    }
+}
